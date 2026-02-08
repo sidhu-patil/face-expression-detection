@@ -18,6 +18,14 @@ A Flutter-based mobile application that detects **human face expressions in real
 
 ---
 
+## 📸 Screenshots
+
+<p float="left">
+  <img src="screenshots/home.png" width="250" />
+  <img src="screenshots/camera.png" width="250" />
+  <img src="screenshots/expression_result.png" width="250" />
+</p>
+
 ## 🛠 Tech Stack
 
 ### Frontend
