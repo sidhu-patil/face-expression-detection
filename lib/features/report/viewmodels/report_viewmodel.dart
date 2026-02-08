@@ -27,18 +27,15 @@ class ReportViewModel extends Notifier<ReportState> {
         options: FaceDetectorOptions(
           enableClassification: true,
           enableTracking: true,
-          minFaceSize: 0.1,
-          performanceMode: FaceDetectorMode.fast,
+          minFaceSize: 0.05,
+          performanceMode: FaceDetectorMode.accurate,
         ),
       );
 
       final faces = await faceDetector.processImage(inputImage);
 
       if (faces.isEmpty) {
-        state = state.copyWith(
-          isLoading: false,
-          // error: "No face detected in the image.",
-        );
+        state = state.copyWith(isLoading: false);
 
         faceDetector.close();
         return;
