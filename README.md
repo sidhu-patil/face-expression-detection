@@ -2,7 +2,10 @@
 
 A Flutter-based mobile application that detects **human face expressions in real time** using **Google ML Kit** and **TensorFlow Lite**, built with a **clean MVVM architecture** and modern Flutter tooling like **Riverpod** and **AutoRoute**.
 
----
+
+| <img src="screenshots/home.png" width="250"/> | <img src="screenshots/camera.png" width="250"/> | <img src="screenshots/expression_result.png" width="250"/> |
+|------|--------|-------------------|
+| Home Screen |  Camera Screen | Expression Analysis |
 
 ## 🚀 Features
 
@@ -16,15 +19,6 @@ A Flutter-based mobile application that detects **human face expressions in real
 - 🔁 Reactive state management with Riverpod
 - 🧭 Type-safe navigation using AutoRoute
 
----
-
-## 📸 Screenshots
-
-<p float="left">
-  <img src="screenshots/home.png" width="250" />
-  <img src="screenshots/camera.png" width="250" />
-  <img src="screenshots/expression_result.png" width="250" />
-</p>
 
 ## 🛠 Tech Stack
 
@@ -40,5 +34,3 @@ A Flutter-based mobile application that detects **human face expressions in real
 - **MVVM (Model–View–ViewModel)**
 - **Riverpod** – State management
 - **AutoRoute** – Navigation & routing
-
----
