@@ -1,5 +1,5 @@
-import 'package:google_mlkit_face_detection/google_mlkit_face_detection.dart';
-// import 'package:image/image.dart' as img;
+import 'package:google_mlkit_face_detection/google_mlkit_face_detection.dart'
+    show Face;
 
 class ReportState {
   final bool isLoading;
@@ -27,4 +27,10 @@ class ReportState {
       data: data ?? this.data,
     );
   }
+}
+
+class ResolutionInfo {
+  final double width;
+  final double height;
+  ResolutionInfo(this.width, this.height);
 }

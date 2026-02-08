@@ -37,7 +37,7 @@ class ReportViewModel extends Notifier<ReportState> {
       if (faces.isEmpty) {
         state = state.copyWith(
           isLoading: false,
-          error: "No face detected in the image.",
+          // error: "No face detected in the image.",
         );
 
         faceDetector.close();
@@ -46,11 +46,15 @@ class ReportViewModel extends Notifier<ReportState> {
 
       state = state.copyWith(faces: faces);
 
-      for (var face in faces) {
-        final fileFn = File(imagePath);
-        final bytes = await fileFn.readAsBytes();
-        final originalImage = img.decodeImage(bytes);
+      final fileFn = File(imagePath);
+      final bytes = await fileFn.readAsBytes();
+      var originalImage = img.decodeImage(bytes);
 
+      if (originalImage != null) {
+        originalImage = img.bakeOrientation(originalImage);
+      }
+
+      for (var face in faces) {
         if (originalImage != null) {
           final x = face.boundingBox.left.toInt();
           final y = face.boundingBox.top.toInt();

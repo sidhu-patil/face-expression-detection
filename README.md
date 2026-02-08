@@ -6,12 +6,13 @@ A Flutter-based mobile application that detects **human face expressions in real
 
 ## 🚀 Features
 
-- 📸 Real-time face detection using camera
-- 😀 Face expression recognition (e.g. Happy, Sad, Neutral, Angry, etc.)
+- 📸 Real-time face detection using live camera feed and gallery images
+- 😀 Face expression recognition (Happy, Sad, Neutral, Angry, Surprised etc.)
+- 🟦 Bounding box overlay on detected faces
 - 🧠 On-device ML inference using TensorFlow Lite
-- 🔒 Fully offline processing (no data sent to servers)
-- ⚡ High-performance & low-latency detection
-- 🧩 Clean, scalable architecture (MVVM)
+- 🔒 Fully offline processing — no data sent to servers
+- ⚡ Low-latency & high-performance detection
+- 🧩 Clean MVVM architecture for scalability and maintainability
 - 🔁 Reactive state management with Riverpod
 - 🧭 Type-safe navigation using AutoRoute
 
@@ -33,8 +34,3 @@ A Flutter-based mobile application that detects **human face expressions in real
 - **AutoRoute** – Navigation & routing
 
 ---
-
-## 🧱 Architecture Overview
-
-The app follows **MVVM architecture** for separation of concerns and testability.
-
